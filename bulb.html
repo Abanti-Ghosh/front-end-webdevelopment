@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bulb</title>
+<script>
+function change(){
+      document.getElementById('bulb').style.width = "150px";
+	  }
+	  function borderchange(){
+      document.getElementById('bulb').style.border = "1px solid grey";
+	  }
+	   function dchange(){
+      document.getElementById('bulb').style.width = "80px";
+	  }
+	  </script>
+	  </head>
+	  <body>
+	  <button onClick = "dchange()">
+	  DECREASE SIZE</button>
+	  <button onClick = "document.getElementById('bulb').src = 'on.gif'">ON</button>
+	  <img id = "bulb" src="off.gif">
+	  <button onClick="document.getElementById('bulb').src='off.gif'">OFF</button>
+	  <button onClick = "change()">
+	  INCREASE SIZE</button>
+	   <button onClick = "borderchange()">
+	  Apply Border</button>
+	  </body>
+	  </html>

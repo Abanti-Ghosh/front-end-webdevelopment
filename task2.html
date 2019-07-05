@@ -1,0 +1,165 @@
+<html>
+   <head>
+   <style>
+       body{margin:0px;}
+	      .div{float:left;}
+          .one{height:524px;width:494px;border:3px solid black;}
+		  .two{height:524px;width:839px;background-color:white;border:3px solid black}
+		  #image{width:100%;height:200px;background-color:white;}
+		  #image>img{width:50%;height:90%;margin-left:100px;border-radius:20px;border:2px solid black;}
+		  
+		  #name{font-size:50px;text-decoration:underline;}
+		  #about1{font-size:18px;padding-left:10px;}
+		  #about2{display:none;font-size:18px;padding-left:10px;}
+		  #about3{display:none;font-size:18px;padding-left:10px;}
+		  #detail_one{display:block;font-size:20px;text-indent:50px;text-align:justify;padding-left:20px;padding-right:20px;}
+		  #detail_two{display:none;font-size:20px;text-indent:50px;text-align:justify;padding-left:20px;padding-right:20px;}
+		  #detail_three{display:none;font-size:20px;text-indent:50px;text-align:justify;padding-left:20px;padding-right:20px;}
+   </style>
+	   <script>
+	      var A=new Array('fbceo.jpg','brin.jpg','bill.jpg');
+		  function info(x)
+		  {
+		    if(x==0)
+			{
+			document.getElementById("pic").src=A[0];
+			 document.getElementById("name").innerHTML="Mark Zuckerberg's";
+			document.getElementById("about1").style.display='block';
+			document.getElementById("about2").style.display='none';
+			document.getElementById("about3").style.display='none'; 
+			document.getElementById("detail_one").style.display='block';
+			document.getElementById("detail_two").style.display='none';
+			document.getElementById("detail_three").style.display='none';
+			}
+			if(x==1)
+			{
+			document.getElementById("pic").src=A[1];
+			document.getElementById("name").innerHTML="Sergey Brin"
+			document.getElementById("about2").style.display='block';
+            document.getElementById("about1").style.display='none';  
+            document.getElementById("about3").style.display='none'; 
+            document.getElementById("detail_one").style.display='none';
+            document.getElementById("detail_two").style.display='block';
+            document.getElementById("detail_three").style.display='none';			
+			}
+			if(x==2)
+			{
+			document.getElementById("pic").src=A[2];
+			document.getElementById("name").innerHTML="Bill Gates";
+			document.getElementById("about1").style.display='none';
+			document.getElementById("about2").style.display='none';
+			document.getElementById("about3").style.display='block'; 
+			document.getElementById("detail_one").style.display='none';
+			document.getElementById("detail_two").style.display='none';
+			document.getElementById("detail_three").style.display='block';
+			}
+			
+		  }
+	   </script>
+   </head>
+   <body>
+     <div>
+      <div  class="div one">
+	    <div id="image"><img src="fbceo.jpg" id="pic"/></div><label id="name">Mark Zuckerberg's</label>
+		<div>
+		<p id="about1">
+		<b>Born</b> Mark Elliot Zuckerberg May 14, 1984 (age 34) White Plains, New York, U.S.
+		<br><b>Residence</b>	Palo Alto, California, U.S.
+        <br><b>Occupation</b>	Technology entrepreneurphilanthropist
+        <br><b>Years active</b>	2004–present
+        <br><b>Known for</b>	Co-founding and leading Facebook
+        <br><b>Home town</b>	Dobbs Ferry, New York, U.S.
+         <br><b>Salary</b>	One-dollar salary
+		<br><b>Net worth</b>	US$55.0 billion[2] (November 2018)
+        <br><b>Spouse(s)</b>	Priscilla Chan (m. 2012)
+		<br><b>Children</b>	2
+		</p>
+		<p id="about2">
+        <b>Born</b>	Sergey Mikhaylovich Brin Серге́й Миха́йлович Брин August 21, 1973 (age 45) Moscow, Russian SFSR, Soviet Union
+		<br><b>Residence</b>	Los Altos, California, U.S.
+        <br> <b>Citizenship</b>	United States (since 1979) Soviet Union (1973–1979)
+		<br><b> Occupation</b> Computer scientistInternet entrepreneur
+		<br><b>Known for</b>	Co-founding Google and X
+        <br><b>Salary</b>	One-dollar salary
+		<br>Net worth	US$50.6 billion (October 2018)[2]
+         <br><b>Title</b>	President of Alphabet Inc.
+        <br><b>Spouse(s)</b>	Anne Wojcicki (m. 2007; div. 2015)
+        <br><b>Children</b>	2
+		</p>
+		<p id="about3">
+		<b>Born</b>	William Henry Gates III October 28, 1955 (age 63) Seattle, Washington, U.S.
+        <br><b>Residence</b>	Xanadu 2.0 in Medina, Washington, U.S.
+        <br><b>Occupation</b>	Business magnate, investor, author, philanthropist, humanitarian
+        <br><b>Known for</b>	Microsoft
+		<br><b>Net worth</b>	$95.6 billion[1] (November 2018)
+        <br><b>Title</b>	Technology advisor of Microsoft Co-chairman of the Bill & Melinda Gates Foundation CEO of Cascade Investment
+                 Chairman of Branded Entertainment Network Chairman of TerraPower
+		<br><b>Board</b> 	Microsoft
+        <br><b>member of</b> Berkshire Hathaway
+        </p>
+		</div>
+	    </div>
+	  
+	  <div class="div two">
+	    <h1 align="center"><u>About website</u></h1>
+	    <p id="detail_one">
+		<u><b>Facebook</b></u>, Inc. is an American online social media and social networking service company based in Menlo Park, California. Its 
+		website was launched  February 4, 2004, by Mark Zuckerberg, along with fellow Harvard College students and roommates 
+		Eduardo Saverin, Andrew McCollum, Dustin Moskovitz, and Chris Hughes. It is considered one of the Big Four technology 
+		companies along with Amazon, Apple, and Google.
+		<br>
+		<label style="margin-left:50px;"></label>
+	     The founders initially limited the website's membership to Harvard students and subsequently Columbia, Stanford, and Yale
+		 students. Membership was eventually expanded to the remaining Ivy League schools, MIT, and higher education institutions in 
+		 the Boston area. Facebook gradually added support for students at various other universities, and eventually to high school 
+		 students. Since 2006, anyone who claims to be at least 13 years old has been allowed to become a registered user of Facebook, 
+		 though variations exist in this requirement, depending on local laws. The name comes from the face book directories often given 
+		 to American university students. Facebook held its initial public offering (IPO) in February 2012, valuing the company at $104 
+		 billion, the largest valuation to date for a newly listed public company. It began selling stock to the public three months later. 
+		 Facebook makes most of its revenue from advertisements that appear onscreen.
+		</p>
+	    <p id="detail_two">
+		 <u><b>Google</b></u> LLC[5] is an American multinational technology company that specializes in Internet-related services and products, which 
+		 include online advertising technologies, search engine, cloud computing, software, and hardware.
+         <br>
+		 <label style="margin-left:50px;"></label>
+         Google was founded in 1998 by Larry Page and Sergey Brin while they were Ph.D. students at Stanford University in California. 
+		 Together they own about 14 percent of its shares and control 56 percent of the stockholder voting power through supervoting stock. 
+		 They incorporated Google as a privately held company on September 4, 1998. An initial public offering (IPO) took place on August 19, 
+		 2004, and Google moved to its headquarters in Mountain View, California, nicknamed the Googleplex. In August 2015, Google 
+		 announced plans to reorganize its various interests as a conglomerate called Alphabet Inc. Google is Alphabet's leading subsidiary and 
+		 will continue to be the umbrella company for Alphabet's Internet interests. Sundar Pichai was appointed CEO of Google, replacing Larry 
+		 Page who became the CEO of Alphabet.
+		 <br>
+		 <label style="margin-left:50px;"></label>
+		 The company's rapid growth since incorporation has triggered a chain of products, acquisitions, and partnerships beyond Google's core 
+		 search engine (Google Search). It offers services designed for work and productivity (Google Docs, Google Sheets, and Google 
+		 Slides), email (Gmail/Inbox), scheduling and time management (Google Calendar), cloud storage (Google Drive), social networking 
+		 (Google+),
+		</p>
+		<p id="detail_three">
+		 <b><u>Microsoft Corporation (MS)</u></b> is an American multinational technology company with headquarters in Redmond, Washington. It 
+		 develops, manufactures, licenses, supports and sells computer software, consumer electronics, personal computers, and related 
+		 services. Its best known software products are the Microsoft Windows line of operating systems, the Microsoft Office suite, and the 
+		 Internet Explorer and Edge web browsers. Its flagship hardware products are the Xbox video game consoles and the Microsoft Surface 
+		 lineup of touchscreen personal computers. As of 2016, it is the world's largest software maker by revenue,[3] and one of the world's 
+		 most valuable companies. The word "Microsoft" is a portmanteau of "microcomputer" and "software".[5] Microsoft is ranked No. 30 in
+         the 2018 Fortune 500 rankings of the largest United States corporations by total revenue.
+        <br>
+        <label style="margin-left:50px;"></label>
+         Microsoft was founded by Bill Gates and Paul Allen on April 4, 1975, to develop and sell BASIC interpreters for the Altair 8800. It rose to 
+         dominate the personal computer operating system market with MS-DOS in the mid-1980s, followed by Microsoft Windows. The 
+         company's 1986 initial public offering (IPO), and subsequent rise in its share price, created three billionaires and an estimated 12,000 
+         millionaires among Microsoft employees. Since the 1990s, it has increasingly diversified from the operating system market and has 
+         made a number of corporate acquisitions, their largest being the acquisition of LinkedIn for $26.2 billion in December 2016, followed
+         by their acquisition of Skype Technologies for $8.5 billion in May 2011. 		 
+		</p>
+	  </div>
+	 
+	 <div><input id="facbook" type="button" value="facebook" style="height:78px;width:300px;margin-left:100px;font-size:50px;border-radius:10px;" onclick="info('0');"/>
+	      <input id="google" type="button" value="google" style="height:78px;width:300px;margin-left:100px;font-size:50px;border-radius:10px;" onclick="info('1');"/>
+		  <input id="microsoft" type="button" value="microsoft" style="height:78px;width:300px;margin-left:100px;font-size:50px;border-radius:10px;" onclick="info('2');"/>
+      </div>
+	</div>
+   </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>togglebox</title>
+<script src = "jquery.js"></script>
+<style>
+#main,#box{
+     background-color:lightgrey;
+	 width:80%;
+	 margin:auto;
+	 text-align:center;
+	 padding:5px;
+	 border:1px solid;
+	 }
+	 #box{
+	      background-color:lightgrey;
+		  display:none;
+		  }
+      #button{
+           float:right;
+		   font-size:18px;
+		   margin-top:-4px;
+		   background-color:grey;
+		   border:1px solid black;
+}		   
+	 </style>
+	 <script>
+	 $(document).ready(function(){
+	   $("#button").click(function(){
+	      $("#box").slideToggle(2000);
+		  var val = $("#button").html();
+		  if(val=="+"){
+		      $("#button").html("-");
+			  }
+			  else if(val=="-"){
+			  $("#button").html("+");
+			  }
+		  });
+		  }); 
+		  </script>
+		  </head>
+		  <body>
+		  <div id = "main">click to show and hide<button id = "button">+</button></div>
+		  <div id = "box">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+		  </body>
+		  </html>

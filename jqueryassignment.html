@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="jquery.js">
+</script>
+<script>
+     $(document).ready(function(){
+	     $("#result").click(function(){
+	       var val1 = $("#mark1").val();
+	       var val2 = $("#mark2").val();
+	       var val3 = $("#mark3").val();
+	       var val4 = $("#mark4").val();
+		   var val5 = $("#mark5").val();
+	       var val6 = (val1*1)+(val2*1)+(val3*1)+(val4*1)+(val5*1);
+	       var omarks=$("#d1").html(val6);
+		   var tmarks=500;
+		   var pmarks=(val6/tmarks)*100;
+		   $("#d2").html(pmarks);
+		   if(pmarks>=91){
+			         $("#d3").html('a');
+}			
+			if(pmarks>=81 && pmarks<91){
+			$("#d3").html('b');
+			  }
+			if(pmarks>=71 && pmarks<81){
+			$("#d3").html('c');
+			 } 
+			if(pmarks>=61 && pmarks<71){
+			
+			$("#d3").html('d'); } 
+			if(pmarks>=51 && pmarks<61){
+			
+			$("#d3").html('e');  
+}			
+if(pmarks>=41 && pmarks<51){
+			
+			$("#d3").html('f');  
+}
+
+		   });
+		   });
+
+
+
+</script>
+<style>
+#table{
+       width:200px;
+	   height:100px;
+	   }
+</style>
+<body>
+Name: <input type="text" id="name" placeholder="enter your name"><br>
+Roll No: <input type="text" id="roll" placeholder="enter your Roll No"><br><br>
+Subject 1: <input type="text" id="sub">
+Subject 1 Marks: <input type="text" id="mark1"><br>
+Subject 2: <input type="text" id="sub">
+Subject 2 Marks: <input type="text" id="mark2"><br>
+Subject 3: <input type="text" id="sub">
+Subject 3 Marks: <input type="text" id="mark3"><br>
+Subject 4: <input type="text" id="sub">
+Subject 4 Marks: <input type="text" id="mark4"><br>
+Subject 5: <input type="text" id="sub">
+Subject 5 Marks: <input type="text" id="mark5"><br><br>
+<button id="result">calculate</button><br><br>
+<table id="table" border="1px">
+<tr>
+<th>obtained marks
+</th>
+<th>percentage
+</th>
+<th>grade
+</th>
+</tr>
+<tr>
+<td id="d1">
+</td>
+<td id="d2">
+</td>
+<td id="d3">
+</td>
+
+</tr>
+
+</table>
+</body>
+
+
+
+
+
+
+</html>

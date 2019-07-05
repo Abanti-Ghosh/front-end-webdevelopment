@@ -1,0 +1,182 @@
+<html>
+    <head>
+	   <style>
+	     body{ margin:0px;}
+		 .div{ 
+		     float:left;
+			 height:100%;
+			 width:670.4px;
+		 }
+		 .one{
+		     background-color:white;
+		 }
+		 .two{
+		     background-color:white;
+		 }
+		 #subdiv1{ 
+		    width:100%;
+			height:276px;
+			background-color:pink;
+			 border:3px black solid;
+		 }
+		 #subdiv2{
+		    margin-top:1px;
+		    width:100%;
+			height:300px;
+			background-color:black;
+			z-index:1;
+			
+			 border:3px black solid;
+		 }
+		#text{
+		     
+		     position:absolute;
+			 margin:88px 237px;
+		     width:200px;
+			 height:100px;
+			 background-color:white;
+			 border:3px black solid;
+		}
+		#image{
+		     position:absolute;
+			 margin:114px 237px;
+		     width:200px;
+			 height:100px;
+			 background-color:orange;
+			 z-index:2;
+			 margin-top:-200px;
+			 border:3px black solid;
+		}
+		#hello{
+		     position:absolute;
+		     font-size:50px;
+			 padding:20px 17px;
+		}
+		#photo{ 
+		     width:100%;
+			 height:100%;
+		   }
+		#subdiv2>img{ 
+		     width:100%;
+			 height:100%;
+		   }
+		 table{margin-top:50px;margin-left:50px;}
+		 input{height:60px;width:100px;}
+		 #im{height:60px;width:100px;}
+		 #row{
+		    font-size:50px;
+			text-transform:capitalize;
+		 }
+	   </style>
+	   <script>
+	        function text_color(x)
+			{
+			   document.getElementById("hello").style.color=x;
+			}
+			function back_color(x)
+			{
+			   document.getElementById("text").style.backgroundColor=x;
+			}
+			function image_front(x)
+			{
+	             var A=new Array('b1.jpg','ganeshji.jpg','img1.jpg','img2.jpg','img3.jpg');		
+                  if(x==0)
+                     {
+				        document.getElementById("photo").src=A[0];	 
+					 }		
+                   if(x==1)
+                     {
+				        document.getElementById("photo").src=A[1];	 
+					 }	
+                    if(x==2)
+                     {
+				        document.getElementById("photo").src=A[2];	 
+					 }
+                   if(x==3)
+                     {
+				        document.getElementById("photo").src=A[3];	 
+					 }	
+                    if(x==4)
+                     {
+				        document.getElementById("photo").src=A[4];	 
+					 }						 
+			}
+			function image_back(x)
+			{
+	             var A=new Array('img3.jpg','img1.jpg','ganeshji.jpg','b1.jpg','img2.jpg');		
+                  if(x==0)
+                     {
+				        document.getElementById("back_photo").src=A[0];	 
+					 }		
+                   if(x==1)
+                     {
+				        document.getElementById("back_photo").src=A[1];	 
+					 }	
+                    if(x==2)
+                     {
+				        document.getElementById("back_photo").src=A[2];	 
+					 }
+                   if(x==3)
+                     {
+				        document.getElementById("back_photo").src=A[3];	 
+					 }	
+                    if(x==4)
+                     {
+				        document.getElementById("back_photo").src=A[4];	 
+					 }						 
+			}			
+	   </script>
+	</head>
+	<body>
+	 <div>
+	   <div class="div one">
+	   <table border=2>
+	        <tr><td colspan="5" id="row" >change text color</td></tr>
+		    <tr>
+			  <td><input type="button"  value="red" onclick="text_color(this.value);"/></td>
+			  <td><input type="button"  value="yellow" onclick="text_color(this.value);"/></td>
+			  <td><input type="button"  value="green" onclick="text_color(this.value);"/></td>
+			  <td><input type="button"  value="pink" onclick="text_color(this.value);"/></td>
+			  <td><input type="button"  value="blue" onclick="text_color(this.value);"/></td>
+			</tr>
+		    <tr><td colspan="5" id="row">change background color</td></tr>
+		     <tr>
+			  <td><input type="button"  value="red" onclick="back_color(this.value);"/></td>
+			  <td><input type="button"  value="yellow" onclick="back_color(this.value);"/></td>
+			  <td><input type="button"  value="green" onclick="back_color(this.value);"/></td>
+			  <td><input type="button"  value="pink" onclick="back_color(this.value);"/></td>
+			  <td><input type="button"  value="blue" onclick="back_color(this.value);"/></td>
+			</tr>
+	        <tr><td colspan="5" id="row">change image</td></tr>
+		     <tr>
+			  <td><img src="b1.jpg" onclick="image_front('0');" id="im"/></td>
+			  <td><img src="ganeshji.jpg" onclick="image_front('1');" id="im"/></td>
+			  <td><img src="img1.jpg" onclick="image_front('2');" id="im"/></td>
+			  <td><img src="img2.jpg" onclick="image_front('3');" id="im"/></td>
+			  <td><img src="img3.jpg" onclick="image_front('4');" id="im"/></td>
+			  </tr>
+		    <tr><td colspan="5" id="row">change background image</td></tr>
+		     <tr>
+			  <td><img src="img3.jpg" onclick="image_back('0');" id="im"/></td>
+			  <td><img src="img1.jpg" onclick="image_back('1');" id="im"/></td>
+			  <td><img src="ganeshji.jpg" onclick="image_back('2');" id="im"/></td>
+			  <td><img src="b1.jpg" onclick="image_back('3');" id="im"/></td>
+			  <td><img src="img2.jpg" onclick="image_back('4');" id="im"/></td>
+			  </tr>		    
+
+		</table>
+	     </div>
+		<div class="div two">
+		    <div id="subdiv1">
+			
+			  <div id="text"><label id="hello">HELLO</label>
+			  </div>
+			</div>
+			<div id="subdiv2"><img id="back_photo" src="white.png" />
+			   <div id="image"><img id="photo" src="red.png" />
+			   </div>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>
