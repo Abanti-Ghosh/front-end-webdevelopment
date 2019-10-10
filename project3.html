@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>project3</title>
+<script src="jquery.js">
+</script>
+<style>
+#box{
+height:100px;
+width:100px;
+background-color:green;
+}
+</style>
+<script>
+$(document).ready(function(){
+$("#but").click(function(){
+$("#box").animate({left:'300px', bottom:'200px'},1000);
+$("#box").css("border","5px solid black");
+});
+$("#butt").click(function(){
+$("#box").animate({left:'0px', bottom:'0px'},1000);
+$("#box").css("border","1px solid black");
+});
+});
+</script>
+</head>
+<body>
+<button id="but">animate it</button> <button id="butt">animate it back</button> <br><br>
+<div id="box" style="position:absolute; margin-top:300px;">watch me be animated!</div>
+
+</body>
+</html>

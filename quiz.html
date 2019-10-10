@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>quiz</title>
+<style>
+#container{
+width:800px;
+height:800px;
+background-color:yellow;
+}
+#box{
+width:200px;
+height:200px;
+background-color:white;
+}
+#box1{
+width:200px;
+height:200px;
+background-color:white;
+}
+body{
+margin:0;
+}
+</style>
+<script>
+function show(){
+document.getElementById("box1").style.display="block";
+}
+<!--function sub(){
+var val=document.b.s.value;
+var val1=document.b1.r.value;
+var count=0;
+if(val=="black"){
+count++;
+}
+if(val1=="biryani"){
+count++;
+}
+doument.getElementById("result").innerHTML=count;
+}-->
+<!--function sub1{
+var A= new Array(
+}-->
+</script>
+</head>
+<body>
+<div id="container">
+<form id="box" name="b">
+quest1: what is my fav color?<br>
+<input type="radio" name="s" value="red" />red<br>
+<input type="radio" name="s" value="pink"/>pink<br>
+<input type="radio" name="s" value="black"/>black<br>
+</form>
+<br><input type="submit" value="next" onClick="show()"><br><br>
+<form id="box1"style="display:none;" name="b1">
+quest1: what is my fav food?<br>
+<input type="radio" name="r" value="biryani"/ >biryani<br>
+<input type="radio"name="r" value="tanduri"/>tanduri<br>
+<input type="radio"name="r"value="chicken"/>chicken<br>
+</form><br><br>
+<input type="submit" value="submit" onClick="sub1()">
+<div id="result" style="width:50px;height:50px;background-color:white;"></div>
+</div>
+</body>
+</html>
+<!--var val=documentt.getElementByName("acc")[0]=pink;

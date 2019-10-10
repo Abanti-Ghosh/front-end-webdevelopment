@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>registration</title>
+<script>
+function wel(){
+document.getElementById("hello").style.display="block";
+document.getElementById("hello2").style.display="block";
+}
+function app(){
+document.getElementById("content").style.display="block";
+
+}
+function but(){
+var e=document.getElementById("ema").value;
+var filter=/@/;
+if(filter.test(e)==0){
+alert("needs @ in password");
+
+}
+}
+function can(){
+document.getElementById("hello").style.display="block";
+document.getElementById("hello2").style.display="block";
+}
+</script>
+</head>
+<body>
+<p id="hello" style="display:none;">hello world from view a</p>
+<br><p id="hello2"style="display:none;">hello world from view b</p><br>
+<a href="#" id="welcome" onClick="wel()">welcome</a>  <a href="#" id="application"onClick="app()">application</a>
+<br><div id="content" style="width:100px;height:100px;display:none;"><input id="ema" type="email" > <input type="password" name="password">
+<br><input type="button" name=" button" value="submit" onClick="but()"><br>
+<input type="button" id=" button2" value="cancel"onClick="can()"></div>
+</body>
+</html>

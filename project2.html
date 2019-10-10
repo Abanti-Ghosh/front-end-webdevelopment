@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>project2
+</title>
+<script src="jquery.js">
+</script>
+<style>
+#b{
+background-color:grey;
+height:100px;
+width:100px;
+}
+</style>
+<script>
+$(document).ready(function(){
+$("#out").click(function(){
+$("#b").fadeOut(3000);
+});
+$("#in").click(function(){
+$("#b").fadeIn(3000);
+});
+});
+</script>
+
+</head>
+<body>
+<button id="out">fade out</button> <button id="in">fade in</button><br><br>
+<div id="b">this content will appear and disappear when the div is faded in and out</div>
+</body>
+</html>

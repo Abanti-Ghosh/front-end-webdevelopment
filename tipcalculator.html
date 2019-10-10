@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>
+tipcalculator
+</title>
+<style>
+body{
+margin:0;
+}
+#container{
+width:100%;
+height:100%;
+background-color:magenta;
+}
+#box{
+width:30%;
+height:50%;
+background-color:yellow;
+margin-left:500px;
+padding-top:200px;
+}
+</style>
+<script>
+function calc(){
+var val1=document.getElementById("amount").value;
+
+var val2=document.getElementById("quality").value;
+var val3=document.getElementById("people").value;
+if(val1==="" || val2==="" || val3===""  ){
+alert("please enter value");
+}
+if(val3==1|| val1==="" || val2==="" || val3===""  ){
+document.getElementById("each").style.display="none";
+}
+else{
+
+document.getElementById("each").style.display="block";
+}
+if(val2==30){
+var val4=(val2*val1)/100;
+var val5=val4/val3;
+ // total= Math.round(total * 100) / 100(to round up to two decimal places)
+val6=val5.toFixed(2);
+document.getElementById("result").innerHTML=val6;
+}
+if(val2==20){
+var val4=(val2*val1)/100;
+var val5=val4/val3;
+document.getElementById("result").innerHTML=val5;
+}
+if(val2==15){
+var val4=(val2*val1)/100;
+var val5=val4/val3;
+document.getElementById("result").innerHTML=val5;
+}
+if(val2==10){
+var val4=(val2*val1)/100;
+var val5=val4/val3;
+document.getElementById("result").innerHTML=val5;
+
+}
+}
+</script>
+</head>
+<body>
+<div id="container">
+<div id="box">
+tip calculator<hr>
+how much was your bill?
+<br>Rs<input type="text" id="amount"><br>
+How was your service?
+<br><select id="quality">
+<option>choose your option</option><option value="20">20%-good</option>
+                       <option value="30" >30%-outstanding</option>
+<option value="15">15%-average</option>
+<option value="10">10%-bad</option></select><br>
+How many people are sharing the bill?
+<br><input type="text" id="people">people<br>
+<button onClick="calc()">calculate</button>
+<div id="result" style="width:90px; height:90px;"></div><div id="each" style="width:50px;height:50px;padding-left:100px;display:none;">each</div>
+</div>
+</div>
+</body>
+</html>

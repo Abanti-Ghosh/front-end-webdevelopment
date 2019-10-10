@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>project4</title>
+<script src="jquery.js"></script>
+<style>
+#text{
+height:200px;
+width:200px;
+background-color:red;
+}
+</style>
+<script>
+$(document).ready(function(){
+$("#text").click(function(){
+$("#text").append("click added some text ");
+});
+$("#text").mouseenter(function(){
+$(this).css("background-color","blue");});
+$("#text").mouseleave(function(){
+$(this).css("background-color","red");});
+});
+
+</script>
+</head>
+<body>
+<div id="text">click here and watch the text change!</div>
+</body>
+</html>

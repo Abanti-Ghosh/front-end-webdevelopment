@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>project1
+</title>
+<script src="jquery.js"></script>
+<style>
+.button{
+height:100px;
+width:100px;
+}
+#toggle{
+height:100px;
+width:100px;
+background-color:grey;
+}
+</style>
+<script>
+$(document).ready(function(){
+$("#button").click(function(){
+$("#toggle").slideUp(1000);});
+$("#but").click(function(){
+$("#toggle").slideDown(1000);});
+$("#butt").click(function(){
+$("#toggle").toggle(1000);});
+
+});
+</script>
+</head>
+<body>
+<button id="button">slide up</button> <button id="but">slide down</button> <button id="butt"> toggle</button>
+<br><br><div id="toggle">this content will appear and disappear when the div is slide in and out</div>
+</body>
+</html>
