@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Survey Form</title>
+<style>
+body{
+margin:0;
+}
+#container{
+width:100%;
+height:100%;
+background-color:#00ffd0;
+margin:0;
+}
+#form{
+width:97%;
+height:80%;
+background-color:#ebebeb;
+margin-left:20px;
+padding-top:40px;
+}
+p{
+font-size:15px;
+}
+<!--input[type=radio]{
+text-align:justify;
+}-->
+input[type=submit]{
+background-color:#00a1ff;
+
+}
+</style>
+</head>
+<body>
+<div id="container"><h1><center>A Survey Form</center></h1>
+  <div id="form"><center><p>Let us know how we can improve FreeCodeCamp</p><form>Name:<input type="text" name="name" placeholder="Enter name"><br><br>Email:<input type="email" name="email" placeholder="email"><br><br>Age:<input type="number" name="age" placeholder="age"><br><p>Which option best describes your current role?</p><select><option>doctor</option>
+<option>Engineer</option>
+<option>professor</option>
+<option>artist</option>
+</select><br><p>How likely is that you would recommend freecodecamp to a friend</p><input type="radio" name="recommend">Definitely<br>
+<input type="radio" name="recommend">Maybe<br>
+<input type="radio" name="recommend">Not Sure<br>
+<p>Things that should be improved in future</p><input type="checkbox" name="front-end" value="frontendprojects">Front-end<br><input type="checkbox" name="back-end" value="backendprojects">Back-end<br><input type="checkbox" name="Data visualization" value="data">Data Visualization<br><br><input type="submit" value="submit">
+</form></center></div>
+</div>
+</body>
+</html>
